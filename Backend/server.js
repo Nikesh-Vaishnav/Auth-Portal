@@ -162,7 +162,7 @@ app.use((req, res) => {
 });
 
 // Connect to MongoDB and start server
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://nikeshvaishnav377:Inda9636@cluster0.mahsunm.mongodb.net/';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://nikeshvaishnav377:Inda9636@cluster0.mahsunm.mongodb.net/authPortal';
 mongoose.connect(MONGODB_URI)
 .then(async () => {
   console.log('Connected to MongoDB');
