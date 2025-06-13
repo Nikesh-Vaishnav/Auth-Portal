@@ -31,7 +31,6 @@ app.use(
     origin:
       process.env.NODE_ENV === "production"
         ? [
-            "https://task-2-priyanshu-nagdas-projects-007c85ca.vercel.app",
             "http://localhost:5173",
           ]
         : "http://localhost:5173",
