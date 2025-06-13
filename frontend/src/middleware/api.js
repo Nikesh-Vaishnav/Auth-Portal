@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Set base URL for axios
-axios.defaults.baseURL = "https://my-project-z1ah.onrender.com";
+axios.defaults.baseURL = "https://auth-portal-jfwf.onrender.com";
 
 export const fetchSidebarMenus = () => axios.get("/api/sidebarmenus");
 export const fetchPermissions = () => axios.get("/api/permissions");
