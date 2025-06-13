@@ -31,7 +31,7 @@ axios.interceptors.response.use(
     // Prevent infinite loops
     if (originalRequest._retry) {
       localStorage.clear();
-      window.location.href = '/login';
+      window.location.href = '/';
       return Promise.reject(error);
     }
 
@@ -53,13 +53,13 @@ axios.interceptors.response.use(
       } catch (refreshError) {
         // If refresh token is invalid, clear everything and redirect to login
         localStorage.clear();
-        window.location.href = '/login';
+        window.location.href = '/';
         return Promise.reject(refreshError);
       }
     } else {
       // No refresh token available, clear and redirect
       localStorage.clear();
-      window.location.href = '/login';
+      window.location.href = '/';
       return Promise.reject(error);
     }
   }

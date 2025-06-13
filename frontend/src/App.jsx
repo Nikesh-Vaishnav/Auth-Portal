@@ -19,7 +19,7 @@ import './styles/EmployeeList.css'
 
 const PrivateRoute = ({ children }) => {
   const isAuthenticated = authService.isAuthenticated();
-  return isAuthenticated ? children : <Navigate to="/login" />;
+  return isAuthenticated ? children : <Navigate to="/" />;
 };
 
 function App() {
