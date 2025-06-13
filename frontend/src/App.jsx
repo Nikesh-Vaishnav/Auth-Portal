@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <ToastContainer 
-        position="bottom-right" 
+        position="top-right" 
         autoClose={3000}
         hideProgressBar={false}
         newestOnTop
@@ -55,8 +55,9 @@ function App() {
       />
       <Routes>
         {/* Public Routes */}
-        <Route path={"/" || "/login"} element={<Home isLoggedIn={authService.isAuthenticated()} />} />
-        
+        <Route path="/" element={<Home isLoggedIn={authService.isAuthenticated()} />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/otp-verify" element={<OTPVerify />} />
 
         {/* Protected Routes */}
