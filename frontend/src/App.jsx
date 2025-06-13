@@ -36,7 +36,7 @@ function App() {
   const handleLogout = () => {
     authService.logout();
     setIsLoggedIn(false);
-    navigate('/login');
+    navigate('/');
   };
 
   return (
